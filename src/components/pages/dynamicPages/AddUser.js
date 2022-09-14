@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react';
 import uuid from 'react-uuid';
 import RegisterFormInputMolecule from '../../molecules/RegisterFormInputMolecule';
 
-class AddStudent extends Component {
+class AddUser extends Component {
     state = {
         name:"",
         email:"",
@@ -41,42 +41,42 @@ class AddStudent extends Component {
   }
 
   render() {
-    const {name,email,phone, errors} = this.state;
+    const {fullName,userName,password, errors} = this.state;
     return (
         <div className="card">
-        <div className="card-header text-center"><h1>Student Registration</h1></div>
+        <div className="card-header text-center"><h1>User Registration</h1></div>
         <div className="card-body">
             <form onSubmit={this.onHandleSubmit}>
             <div className="mb-2">
                 <RegisterFormInputMolecule 
-                label="Name" 
-                name="name" 
-                placeholder="Please enter your name."
-                value={name}
+                label="Full Name" 
+                fullName="fullName" 
+                placeholder="Please enter your full name."
+                value={fullName}
                 onChange={this.onHandleChange}
-                error={errors.name}
+                error={errors.fullName}
                 type="text"
                 />
             </div>
             <div className="mb-2">
                 <RegisterFormInputMolecule 
-                label="Email" 
-                name="email" 
-                placeholder="Please enter your email."
-                value={email}
+                label="User Name" 
+                name="userName" 
+                placeholder="Please enter your user name."
+                value={userName}
                 onChange={this.onHandleChange}
-                error={errors.email}
-                type="email"
+                error={errors.userName}
+                type="userName"
                 />
             </div>
             <div className="mb-2">
                 <RegisterFormInputMolecule 
-                label="Phone" 
-                name="phone" 
-                placeholder="Please enter your phone."
-                value={phone}
+                label="Password" 
+                name="password" 
+                placeholder="Please enter your password."
+                value={password}
                 onChange={this.onHandleChange}
-                error={errors.phone}
+                error={errors.password}
                 />
             </div>
             <input type="submit" value="register" className="btn btn-outline-primary float-end"/>
@@ -86,4 +86,4 @@ class AddStudent extends Component {
     )
   }
 }
-export default AddStudent;
+export default AddUser;

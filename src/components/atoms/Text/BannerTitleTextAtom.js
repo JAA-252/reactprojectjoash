@@ -4,7 +4,7 @@ class BannerTitleTextAtom extends Component {
   render() {
     return (
       <div>
-        <p style={{textAlign: "center", paddingTop: '20px'}} >Committed to learning</p>
+        <p style={{textAlign: "center", paddingTop: '20px'}} >Where community is at the heart</p>
       </div>
     )
   }

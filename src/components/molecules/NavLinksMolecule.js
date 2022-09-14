@@ -10,7 +10,7 @@ class RegisterFormLinksMolecule extends Component {
           classNameString="nav-link active"
           ariaCurrentString="page"
           toString="/"
-          iconClassNameString="fa fa-home mx-1"
+          iconClassNameString=""
           ariaHiddenString="true"
           linkTextString="Home"
         />
@@ -19,8 +19,8 @@ class RegisterFormLinksMolecule extends Component {
         <HeaderLinkAtom 
           classNameString="nav-link"
           ariaCurrentString=""
-          toString="/students/add"
-          iconClassNameString="fa fa-plus mx-1"
+          toString="/register"
+          iconClassNameString=""
           ariaHiddenString="true"
           linkTextString="Register"
         />
@@ -28,9 +28,29 @@ class RegisterFormLinksMolecule extends Component {
         <li className="nav-item">
         <HeaderLinkAtom 
           classNameString="nav-link"
+          ariaCurrentString=""
+          toString="/Products"
+          iconClassNameString=""
+          ariaHiddenString="true"
+          linkTextString="Products"
+        />
+        </li>
+        <li className="nav-item" id="log">
+        <HeaderLinkAtom 
+          classNameString="nav-link"
+          ariaCurrentString=""
+          toString="/login"
+          iconClassNameString=""
+          ariaHiddenString="true"
+          linkTextString="My Account"
+        />
+        </li>
+        <li className="nav-item">
+        <HeaderLinkAtom 
+          classNameString="nav-link"
           ariaCurrentString="page"
           toString="/about"
-          iconClassNameString="fa fa-question mx-1"
+          iconClassNameString=""
           ariaHiddenString="true"
           linkTextString="About"
         />
